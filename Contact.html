@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Otsego Lions Club</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <script src="conScript.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("7ficP4fpBupxwUDlI");
+        })();
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/img/LCI_emblem_blue_web.png" alt="Bootstrap" width="80" height="76">
+                <span class="organization">
+                    Otsego Lions
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="OurWork.html">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Donation.html">Donations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="AboutUs.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="otsego-main">
+        <section class="otsego-info">
+            <img class="otsego-logo" src="/img/Otsego_Lions.png" alt="Bootstrap">
+            <h1>
+                Contact Us...
+            </h1>
+            <h4>
+                Welcome!
+            </h4>
+            <p>
+                Have questions or want to learn more about us? Please fill out the form below and we will get back to
+                you!
+            </p>
+        </section>
+        <section class="otsego-contact-form">
+            <form action="#" name="contact" class="form-contact" onsubmit="return false">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>
+                            * First name:
+                        </label>
+                        <input id="fname" type="text" placeholder="first name">
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            * Last name:
+                        </label>
+                        <input id="lname" type="text" placeholder="last name">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>
+                            * Email address:
+                        </label>
+                        <input id="email" type="email" placeholder="email address">
+                    </div>
+                    <div class="input-group">
+                        <label>
+                            Subject:
+                        </label>
+                        <input id="subject" type="text" placeholder="subject">
+                    </div>
+                </div>
+                <div class="input-row-msg">
+                    <div class="input-group-msg">
+                        <label>
+                            * Message:
+                        </label>
+                        <textarea id="message" rows="4" placeholder="message"></textarea>
+                    </div>
+                    <div class="input-group-msg">
+                        <button id="button" type="submit" onclick="sendMail()"><strong>Submit</strong></button>
+                    </div>
+                </div>
+            </form>
+            <p>
+                <strong>Interested in joining?</strong> Click the mail icon below to send us an email or follow us on
+                social media.
+            </p>
+        </section>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.facebook.com/OtsegoLions/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                <!-- <a href="#"><i class="fa fa-snapchat"></i></a> -->
+                <a href="https://www.instagram.com/otsegolionsclub/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="Contact.html"><i class="fa fa-envelope"></i></a>
+            </div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="Index.html">Home</a></li>
+                <li class="list-inline-item"><a href="OurWork.html">Our Work</a></li>
+                <li class="list-inline-item"><a href="Events.html">Events</a></li>
+                <li class="list-inline-item"><a href="Contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="Donation.html">Donation</a></li>
+                <li class="list-inline-item"><a href="AboutUs.html">About Us</a></li>
+            </ul>
+            <p class="copyright">
+                Kanz Solutions, LLC. © 2023
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
