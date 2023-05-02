@@ -51,6 +51,15 @@ img.otsego-logo {
   padding: 10px;
 }
 
+img.otsego-map {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 50%;
+  padding: 10px;
+}
+
 .otsego-info h1 {
   font-family: 'Nunito', sans-serif;
   font-style: bold;
